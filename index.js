@@ -1,8 +1,10 @@
 // Write your code here!
 //1
-main.remove();
+const element = document.getElementById("main");
+element.remove();
 
-const newHeader= document.createElement('h1')
-newHeader.setAttribute("id", "victory")
+const newHeader = document.createElement("h1");
+newHeader.id = "victory";
 
-document.getElementById("victory").append("Gil is the champion");
+newHeader.textContent = "Gil is the champion"
+document.body.append(newHeader)
